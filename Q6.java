@@ -5,6 +5,7 @@
  *          i   o
  *          o   u
  *          u   a
+ * And then print the String in Upper Case.
  */
 import java.util.Scanner;
 class Q6
@@ -14,17 +15,17 @@ class Q6
         System.out.println("Enter the String");
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
-        a = a.toLowerCase();
+        a = a.toUpperCase();
         for(int i = 0;i<=a.length()-1;i++)
         {
             char z = a.charAt(i);
             switch(z)
             {
-                case 'a': System.out.print("e"); break;
-                case 'e': System.out.print("i"); break;
-                case 'i': System.out.print("o"); break;
-                case 'o': System.out.print("u"); break;
-                case 'u': System.out.print("a"); break;
+                case 'A': System.out.print("E"); break;
+                case 'E': System.out.print("I"); break;
+                case 'I': System.out.print("O"); break;
+                case 'O': System.out.print("U"); break;
+                case 'U': System.out.print("A"); break;
                 default : System.out.print(z);;
             }
         }
